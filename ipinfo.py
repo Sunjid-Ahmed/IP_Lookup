@@ -61,9 +61,7 @@ def get_ip_info(ip):
 def main():
     parser = argparse.ArgumentParser(description="🔍 IP Information Lookup Tool (like mini-nmap)")
     console.print('''
-from rich import print
 
-print("""[bold magenta]
  ██▓ ██▓███   ▄▄▄       ▄████▄   ██▓    ▓█████  ▒██   ██▒ ██▓ ██▓███  
 ▓██▒▓██░  ██▒▒████▄    ▒██▀ ▀█  ▓██▒    ▓█   ▀  ▒▒ █ █ ▒░▓██▒▓██░  ██▒
 ▒██▒▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ▒██░    ▒███    ░░  █   ░▒██▒▓██░ ██▓▒
@@ -76,7 +74,6 @@ print("""[bold magenta]
                       ░                                               
              [ IP LOOKUP TOOL - Trace IP, Find Location, ISP, and More ]
 [/bold magenta]
-""")
 
 [bold cyan]A CLI tool to fetch IP details like a mini-Nmap[/bold cyan]
 [bold yellow]Author:[/bold yellow] Sunjid Ahmed
