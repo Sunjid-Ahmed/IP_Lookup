@@ -19,7 +19,7 @@ A Kali-style Python CLI tool to get detailed info about any IP address using [ip
 
 ```bash
 git clone https://github.com/Sunjid-Ahmed/IP_Lookup.git
-cd ipinfo-tool
+cd IP_Lookup
 ```
 
 ### ✅ Run the installer
