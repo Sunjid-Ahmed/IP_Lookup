@@ -2,6 +2,8 @@
 
 A Kali-style Python CLI tool to get detailed info about any IP address using [ip-api.com](http://ip-api.com).
 
+![IPInfo Tool Banner](https://i.imgur.com/o5S0PH0.png)
+
 ## 📦 Features
 
 - Reverse DNS (PTR)
