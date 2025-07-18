@@ -21,7 +21,8 @@ def reverse_dns(ip):
 
 def get_ip_info(ip):
     try:
-        res = requests.get(f"http://ip-api.com/json/{ip}?fields=66846719", timeout=5)
+        headers = {"User-Agent": "IPInfoLookupTool/1.0"}
+        res = requests.get(f"http://ip-api.com/json/{ip}?fields=66846719", timeout=5, headers=headers)
         data = res.json()
 
         if data["status"] != "success":
@@ -60,7 +61,8 @@ def get_ip_info(ip):
 
 def main():
     parser = argparse.ArgumentParser(description="🔍 IP Information Lookup Tool (like mini-nmap)")
-    console.print('''
+    
+    console.print("""[bold magenta]
 
  ██▓ ██▓███   ▄▄▄       ▄████▄   ██▓    ▓█████  ▒██   ██▒ ██▓ ██▓███  
 ▓██▒▓██░  ██▒▒████▄    ▒██▀ ▀█  ▓██▒    ▓█   ▀  ▒▒ █ █ ▒░▓██▒▓██░  ██▒
@@ -73,12 +75,11 @@ def main():
  ░               ░  ░ ░ ░          ░  ░   ░  ░ ░    ░   ░           
                       ░                                               
              [ IP LOOKUP TOOL - Trace IP, Find Location, ISP, and More ]
-[/bold magenta]
+[/bold magenta]""")
+    console.print("[bold cyan]A CLI tool to fetch IP details like a mini-Nmap[/bold cyan]")
+    console.print("[bold yellow]Author:[/bold yellow] Sunjid Ahmed")
+    console.print("[bold yellow]GitHub:[/bold yellow] https://github.com/Sunjid-Ahmed")
 
-[bold cyan]A CLI tool to fetch IP details like a mini-Nmap[/bold cyan]
-[bold yellow]Author:[/bold yellow] Sunjid Ahmed
-[bold yellow]GitHub:[/bold yellow] https://github.com/Sunjid-Ahmed
-''')
     parser.add_argument("-i", "--ip", help="Target IP address", required=True)
     args = parser.parse_args()
     get_ip_info(args.ip)
