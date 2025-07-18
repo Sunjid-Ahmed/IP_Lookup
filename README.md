@@ -1,4 +1,4 @@
-# 🔍 IPInfo Tool
+# 🔍 IpInfo Tool
 
 A Kali-style Python CLI tool to get detailed info about any IP address using [ip-api.com](http://ip-api.com).
 
