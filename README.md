@@ -18,7 +18,7 @@ A Kali-style Python CLI tool to get detailed info about any IP address using [ip
 ### ✅ Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ipinfo-tool.git
+git clone https://github.com/Sunjid-Ahmed/ipinfo-tool.git
 cd ipinfo-tool
 ```
 
